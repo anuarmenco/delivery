@@ -18,6 +18,10 @@ def bob():
     val = {"value": "bob"}
     return jsonify(val)
 
+@app.route('/papa')
+def papa():
+    val = {"value": "papa"}
+    return jsonify(val)
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
