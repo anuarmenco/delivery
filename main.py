@@ -23,5 +23,10 @@ def papa():
     val = {"value": "papa"}
     return jsonify(val)
 
+@app.route('/piedra')
+def piedra():
+    val = {"value": "piedra"}
+    return jsonify(val)
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
